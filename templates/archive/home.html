@@ -1,0 +1,910 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+         style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                               values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix>
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627"></feFuncR>
+                    <feFuncG type="table" tableValues="0 0.49803921568627"></feFuncG>
+                    <feFuncB type="table" tableValues="0 0.49803921568627"></feFuncB>
+                    <feFuncA type="table" tableValues="1 1"></feFuncA>
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in"></feComposite>
+            </filter>
+        </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+         style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                               values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix>
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1"></feFuncR>
+                    <feFuncG type="table" tableValues="0 1"></feFuncG>
+                    <feFuncB type="table" tableValues="0 1"></feFuncB>
+                    <feFuncA type="table" tableValues="1 1"></feFuncA>
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in"></feComposite>
+            </filter>
+        </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+         style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                               values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix>
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765"></feFuncR>
+                    <feFuncG type="table" tableValues="0 1"></feFuncG>
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431"></feFuncB>
+                    <feFuncA type="table" tableValues="1 1"></feFuncA>
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in"></feComposite>
+            </filter>
+        </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+         style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                               values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix>
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1"></feFuncR>
+                    <feFuncG type="table" tableValues="0 0.27843137254902"></feFuncG>
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902"></feFuncB>
+                    <feFuncA type="table" tableValues="1 1"></feFuncA>
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in"></feComposite>
+            </filter>
+        </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+         style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                               values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix>
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0"></feFuncR>
+                    <feFuncG type="table" tableValues="0 0.64705882352941"></feFuncG>
+                    <feFuncB type="table" tableValues="0 1"></feFuncB>
+                    <feFuncA type="table" tableValues="1 1"></feFuncA>
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in"></feComposite>
+            </filter>
+        </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+         style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                               values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix>
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1"></feFuncR>
+                    <feFuncG type="table" tableValues="0 0.94901960784314"></feFuncG>
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412"></feFuncB>
+                    <feFuncA type="table" tableValues="1 1"></feFuncA>
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in"></feComposite>
+            </filter>
+        </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+         style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                               values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix>
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745"></feFuncR>
+                    <feFuncG type="table" tableValues="0 1"></feFuncG>
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4"></feFuncB>
+                    <feFuncA type="table" tableValues="1 1"></feFuncA>
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in"></feComposite>
+            </filter>
+        </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+         style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                               values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix>
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1"></feFuncR>
+                    <feFuncG type="table" tableValues="0 0.66274509803922"></feFuncG>
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725"></feFuncB>
+                    <feFuncA type="table" tableValues="1 1"></feFuncA>
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in"></feComposite>
+            </filter>
+        </defs>
+    </svg>
+    <a class="skip-link screen-reader-text" href="#sitemain">
+        Skip to content</a>
+
+<!-- header -->
+    <div class="home-banner">
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_230465724-scaled.jpeg"
+                     title="#slidecaption1" style="width: 2735.2px; visibility: hidden;">
+                <img src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_259143974-scaled.jpeg"
+                     title="#slidecaption2" style="width: 2735.2px; visibility: hidden;">
+                <img src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_227637710-work-seniors-scaled.jpeg"
+                     title="#slidecaption3" style="width: 2735.2px; visibility: hidden;">
+                <img class="nivo-main-image"
+                     src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_227637710-work-seniors-scaled.jpeg"
+                     style="height: 1796.05px; width: 2735.2px;">
+                <div class="nivo-caption" style="display: block;">
+                    <h4>Welcome To Skade</h4>
+                    <h2><a href="http://www.skade.us/shop/">Shop</a></h2>
+                    <a class="slide-button" href="http://www.skade.us/shop/">
+                        Lear More </a>
+                </div>
+                <div class="nivo-directionNav"><a class="nivo-prevNav">Prev</a><a class="nivo-nextNav">Next</a></div>
+                <div class="nivo-slice" name="0"
+                     style="left: 0px; width: 2735.2px; height: 1796.05px; opacity: 0.670846; overflow: hidden;"><img
+                        src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_230465724-scaled.jpeg"
+                        style="position:absolute; width:2735.2px; height:auto; display:block !important; top:0; left:-0px;">
+                </div>
+                <div class="nivo-slice" name="1"
+                     style="left: 182px; width: 182px; height: 1796.05px; opacity: 0; overflow: hidden;"><img
+                        src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_230465724-scaled.jpeg"
+                        style="position:absolute; width:2735.2px; height:auto; display:block !important; top:0; left:-182px;">
+                </div>
+                <div class="nivo-slice" name="2"
+                     style="left: 364px; width: 182px; height: 1796.05px; opacity: 0; overflow: hidden;"><img
+                        src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_230465724-scaled.jpeg"
+                        style="position:absolute; width:2735.2px; height:auto; display:block !important; top:0; left:-364px;">
+                </div>
+                <div class="nivo-slice" name="3"
+                     style="left: 546px; width: 182px; height: 1796.05px; opacity: 0; overflow: hidden;"><img
+                        src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_230465724-scaled.jpeg"
+                        style="position:absolute; width:2735.2px; height:auto; display:block !important; top:0; left:-546px;">
+                </div>
+                <div class="nivo-slice" name="4"
+                     style="left: 728px; width: 182px; height: 1796.05px; opacity: 0; overflow: hidden;"><img
+                        src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_230465724-scaled.jpeg"
+                        style="position:absolute; width:2735.2px; height:auto; display:block !important; top:0; left:-728px;">
+                </div>
+                <div class="nivo-slice" name="5"
+                     style="left: 910px; width: 182px; height: 1796.05px; opacity: 0; overflow: hidden;"><img
+                        src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_230465724-scaled.jpeg"
+                        style="position:absolute; width:2735.2px; height:auto; display:block !important; top:0; left:-910px;">
+                </div>
+                <div class="nivo-slice" name="6"
+                     style="left: 1092px; width: 182px; height: 1796.05px; opacity: 0; overflow: hidden;"><img
+                        src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_230465724-scaled.jpeg"
+                        style="position:absolute; width:2735.2px; height:auto; display:block !important; top:0; left:-1092px;">
+                </div>
+                <div class="nivo-slice" name="7"
+                     style="left: 1274px; width: 182px; height: 1796.05px; opacity: 0; overflow: hidden;"><img
+                        src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_230465724-scaled.jpeg"
+                        style="position:absolute; width:2735.2px; height:auto; display:block !important; top:0; left:-1274px;">
+                </div>
+                <div class="nivo-slice" name="8"
+                     style="left: 1456px; width: 182px; height: 1796.05px; opacity: 0; overflow: hidden;"><img
+                        src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_230465724-scaled.jpeg"
+                        style="position:absolute; width:2735.2px; height:auto; display:block !important; top:0; left:-1456px;">
+                </div>
+                <div class="nivo-slice" name="9"
+                     style="left: 1638px; width: 182px; height: 1796.05px; opacity: 0; overflow: hidden;"><img
+                        src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_230465724-scaled.jpeg"
+                        style="position:absolute; width:2735.2px; height:auto; display:block !important; top:0; left:-1638px;">
+                </div>
+                <div class="nivo-slice" name="10"
+                     style="left: 1820px; width: 182px; height: 1796.05px; opacity: 0; overflow: hidden;"><img
+                        src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_230465724-scaled.jpeg"
+                        style="position:absolute; width:2735.2px; height:auto; display:block !important; top:0; left:-1820px;">
+                </div>
+                <div class="nivo-slice" name="11"
+                     style="left: 2002px; width: 182px; height: 1796.05px; opacity: 0; overflow: hidden;"><img
+                        src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_230465724-scaled.jpeg"
+                        style="position:absolute; width:2735.2px; height:auto; display:block !important; top:0; left:-2002px;">
+                </div>
+                <div class="nivo-slice" name="12"
+                     style="left: 2184px; width: 182px; height: 1796.05px; opacity: 0; overflow: hidden;"><img
+                        src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_230465724-scaled.jpeg"
+                        style="position:absolute; width:2735.2px; height:auto; display:block !important; top:0; left:-2184px;">
+                </div>
+                <div class="nivo-slice" name="13"
+                     style="left: 2366px; width: 182px; height: 1796.05px; opacity: 0; overflow: hidden;"><img
+                        src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_230465724-scaled.jpeg"
+                        style="position:absolute; width:2735.2px; height:auto; display:block !important; top:0; left:-2366px;">
+                </div>
+                <div class="nivo-slice" name="14"
+                     style="left: 2548px; width: 187.2px; height: 1796.05px; opacity: 0; overflow: hidden;"><img
+                        src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_230465724-scaled.jpeg"
+                        style="position:absolute; width:2735.2px; height:auto; display:block !important; top:0; left:-2548px;">
+                </div>
+            </div>
+            <div class="nivo-controlNav"><a class="nivo-control active" rel="0">1</a><a class="nivo-control"
+                                                                                        rel="1">2</a><a
+                    class="nivo-control" rel="2">3</a></div><!-- nivoslider -->
+
+            <div id="slidecaption1" class="nivo-html-caption">
+                <h4>Welcome To Skade</h4>
+                <h2><a href="http://www.skade.us/shop/">Shop</a></h2>
+                <a class="slide-button" href="http://www.skade.us/shop/">
+                    Lear More </a>
+            </div>
+            <div id="slidecaption2" class="nivo-html-caption">
+                <h4>Welcome To Skade</h4>
+                <h2><a href="http://www.skade.us/refund_returns/">Refund and Returns Policy</a></h2>
+                <a class="slide-button" href="http://www.skade.us/refund_returns/">
+                    Lear More </a>
+            </div>
+            <div id="slidecaption3" class="nivo-html-caption">
+                <h4>Welcome To Skade</h4>
+                <h2><a href="http://www.skade.us/warranty/">Warranty</a></h2>
+                <a class="slide-button" href="http://www.skade.us/warranty/">
+                    Lear More </a>
+            </div>
+        </div><!-- slider wrapper -->
+        <div class="social-icons" data-title="Social">
+            <a href="http://facebook" target="_blank" title="Facebook"><i class="fa fa-facebook-f"
+                                                                          aria-hidden="true"></i></a><a
+                href="http://twitter" target="_blank" title="Twitter"><i class="fa fa-twitter"
+                                                                         aria-hidden="true"></i></a><a
+                href="http://instagram" target="_blank" title="Instagram"><i class="fa fa-instagram"
+                                                                             aria-hidden="true"></i></a>
+        </div>
+    </div><!-- home banner -->
+    <div class="welcome-section">
+        <div class="wrapper">
+            <div class="flex flex-center">
+                <div class="col">
+                    <div class="welcome-content"><h4 class="subheading">Welcome to Skade</h4>
+                        <h2>About Us</h2>
+                        <p>Skade Hearing is dedicated to helping the hard of hearing enjoy the sounds they love and
+                            through
+                            a team of hearing specialists provide great products at an affordable cost. We sell a wide
+                            range
+                            of products from hearing aids, batteries, wax guards, tubes, domes as well as amplified
+                            phones,
+                            and many other life-enhancing products for […]</p><a href="http://www.skade.us/about-us/"
+                                                                                 class="welcome-more"><span>Read More</span><i></i></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="welcome-thumb"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="content-area">
+            <div class="middle-align">
+                <div class="site-main" id="sitefull">
+
+                    <article id="post-740" class="post-740 page type-page status-publish has-post-thumbnail hentry">
+                        <header class="entry-header">
+                            <h1 class="entry-title">Type of Hearing Aid</h1>
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-content">
+
+                            <figure class="wp-block-video">
+                                <video controls=""
+                                       src="http://www.skade.us/wp-content/uploads/2022/05/70fd3efe0750a197ddd642e0edbca36d.mp4"></video>
+                            </figure>
+
+
+                            <br>
+                            <br>
+
+
+                            <h1 class="has-text-align-center has-vivid-cyan-blue-color has-text-color has-large-font-size">
+                                New Arrival</h1>
+
+
+                            <div class="alignnormal">
+                                <div id="metaslider-id-943" style="max-width: 700px; margin: 0 auto;"
+                                     class="ml-slider-3-27-2 metaslider metaslider-flex metaslider-943 ml-slider">
+                                    <div id="metaslider_container_943">
+                                        <div id="metaslider_943" class="flexslider">
+                                            <ul aria-live="polite" class="slides">
+                                                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;"
+                                                    class="slide-944 ms-image" data-thumb-alt="" aria-hidden="true"><a
+                                                        href="https://www.amazon.com/gp/product/B0B85KXLKV"
+                                                        target="_blank"><img
+                                                        src="http://www.skade.us/wp-content/uploads/2022/08/51ZIibPjGKL._SL1500_.jpg"
+                                                        class="slider-943 slide-944" alt="" decoding="async"
+                                                        loading="lazy"
+                                                        rel="" title="51ZIibPjGKL._SL1500_"
+                                                        style="margin: 0 auto; width: 73.733333333333%"
+                                                        srcset="http://www.skade.us/wp-content/uploads/2022/08/51ZIibPjGKL._SL1500_.jpg 1106w, http://www.skade.us/wp-content/uploads/2022/08/51ZIibPjGKL._SL1500_-400x542.jpg 400w, http://www.skade.us/wp-content/uploads/2022/08/51ZIibPjGKL._SL1500_-221x300.jpg 221w, http://www.skade.us/wp-content/uploads/2022/08/51ZIibPjGKL._SL1500_-755x1024.jpg 755w, http://www.skade.us/wp-content/uploads/2022/08/51ZIibPjGKL._SL1500_-768x1042.jpg 768w, http://www.skade.us/wp-content/uploads/2022/08/51ZIibPjGKL._SL1500_-1x1.jpg 1w"
+                                                        sizes="(max-width: 1106px) 100vw, 1106px" draggable="false"
+                                                        width="1106" height="1500"></a></li>
+                                                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;"
+                                                    class="slide-945 ms-image" data-thumb-alt="" aria-hidden="true"><a
+                                                        href="https://www.amazon.com/gp/product/B0B85KXLKV"
+                                                        target="_blank"><img
+                                                        src="http://www.skade.us/wp-content/uploads/2022/08/710SaZIUAnL._SL1500_.jpg"
+                                                        class="slider-943 slide-945" alt="" decoding="async"
+                                                        loading="lazy"
+                                                        rel="" title="710SaZIUAnL._SL1500_"
+                                                        style="margin: 0 auto; width: 100%"
+                                                        srcset="http://www.skade.us/wp-content/uploads/2022/08/710SaZIUAnL._SL1500_.jpg 1500w, http://www.skade.us/wp-content/uploads/2022/08/710SaZIUAnL._SL1500_-200x200.jpg 200w, http://www.skade.us/wp-content/uploads/2022/08/710SaZIUAnL._SL1500_-100x100.jpg 100w, http://www.skade.us/wp-content/uploads/2022/08/710SaZIUAnL._SL1500_-400x400.jpg 400w, http://www.skade.us/wp-content/uploads/2022/08/710SaZIUAnL._SL1500_-300x300.jpg 300w, http://www.skade.us/wp-content/uploads/2022/08/710SaZIUAnL._SL1500_-1024x1024.jpg 1024w, http://www.skade.us/wp-content/uploads/2022/08/710SaZIUAnL._SL1500_-150x150.jpg 150w, http://www.skade.us/wp-content/uploads/2022/08/710SaZIUAnL._SL1500_-768x768.jpg 768w, http://www.skade.us/wp-content/uploads/2022/08/710SaZIUAnL._SL1500_-1x1.jpg 1w"
+                                                        sizes="(max-width: 1500px) 100vw, 1500px" draggable="false"
+                                                        width="1500" height="1500"></a></li>
+                                                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;"
+                                                    class="slide-946 ms-image" data-thumb-alt="" aria-hidden="true"><a
+                                                        href="https://www.amazon.com/gp/product/B0B85KXLKV"
+                                                        target="_blank"><img
+                                                        src="http://www.skade.us/wp-content/uploads/2022/08/81aAaRJcIrL._SL1500_.jpg"
+                                                        class="slider-943 slide-946" alt="" decoding="async"
+                                                        loading="lazy"
+                                                        rel="" title="81aAaRJcIrL._SL1500_"
+                                                        style="margin: 0 auto; width: 100%"
+                                                        srcset="http://www.skade.us/wp-content/uploads/2022/08/81aAaRJcIrL._SL1500_.jpg 1500w, http://www.skade.us/wp-content/uploads/2022/08/81aAaRJcIrL._SL1500_-200x200.jpg 200w, http://www.skade.us/wp-content/uploads/2022/08/81aAaRJcIrL._SL1500_-100x100.jpg 100w, http://www.skade.us/wp-content/uploads/2022/08/81aAaRJcIrL._SL1500_-400x400.jpg 400w, http://www.skade.us/wp-content/uploads/2022/08/81aAaRJcIrL._SL1500_-300x300.jpg 300w, http://www.skade.us/wp-content/uploads/2022/08/81aAaRJcIrL._SL1500_-1024x1024.jpg 1024w, http://www.skade.us/wp-content/uploads/2022/08/81aAaRJcIrL._SL1500_-150x150.jpg 150w, http://www.skade.us/wp-content/uploads/2022/08/81aAaRJcIrL._SL1500_-768x768.jpg 768w, http://www.skade.us/wp-content/uploads/2022/08/81aAaRJcIrL._SL1500_-1x1.jpg 1w"
+                                                        sizes="(max-width: 1500px) 100vw, 1500px" draggable="false"
+                                                        width="1500" height="1500"></a></li>
+                                                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;"
+                                                    class="slide-947 ms-image" data-thumb-alt="" aria-hidden="true"><a
+                                                        href="https://www.amazon.com/gp/product/B0B85KXLKV"
+                                                        target="_blank"><img
+                                                        src="http://www.skade.us/wp-content/uploads/2022/08/71YMZZZRcL._SL1500_.jpg"
+                                                        class="slider-943 slide-947" alt="" decoding="async"
+                                                        loading="lazy"
+                                                        rel="" title="71YMZZZR+cL._SL1500_"
+                                                        style="margin: 0 auto; width: 100%"
+                                                        srcset="http://www.skade.us/wp-content/uploads/2022/08/71YMZZZRcL._SL1500_.jpg 1500w, http://www.skade.us/wp-content/uploads/2022/08/71YMZZZRcL._SL1500_-200x200.jpg 200w, http://www.skade.us/wp-content/uploads/2022/08/71YMZZZRcL._SL1500_-100x100.jpg 100w, http://www.skade.us/wp-content/uploads/2022/08/71YMZZZRcL._SL1500_-400x400.jpg 400w, http://www.skade.us/wp-content/uploads/2022/08/71YMZZZRcL._SL1500_-300x300.jpg 300w, http://www.skade.us/wp-content/uploads/2022/08/71YMZZZRcL._SL1500_-1024x1024.jpg 1024w, http://www.skade.us/wp-content/uploads/2022/08/71YMZZZRcL._SL1500_-150x150.jpg 150w, http://www.skade.us/wp-content/uploads/2022/08/71YMZZZRcL._SL1500_-768x768.jpg 768w, http://www.skade.us/wp-content/uploads/2022/08/71YMZZZRcL._SL1500_-1x1.jpg 1w"
+                                                        sizes="(max-width: 1500px) 100vw, 1500px" draggable="false"
+                                                        width="1500" height="1500"></a></li>
+                                                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;"
+                                                    class="slide-948 ms-image" data-thumb-alt="" aria-hidden="true"><a
+                                                        href="https://www.amazon.com/gp/product/B0B85KXLKV"
+                                                        target="_blank"><img
+                                                        src="http://www.skade.us/wp-content/uploads/2022/08/71oBCNB10lL._SL1500_.jpg"
+                                                        class="slider-943 slide-948" alt="" decoding="async"
+                                                        loading="lazy"
+                                                        rel="" title="71oBCNB10lL._SL1500_"
+                                                        style="margin: 0 auto; width: 100%"
+                                                        srcset="http://www.skade.us/wp-content/uploads/2022/08/71oBCNB10lL._SL1500_.jpg 1500w, http://www.skade.us/wp-content/uploads/2022/08/71oBCNB10lL._SL1500_-200x200.jpg 200w, http://www.skade.us/wp-content/uploads/2022/08/71oBCNB10lL._SL1500_-100x100.jpg 100w, http://www.skade.us/wp-content/uploads/2022/08/71oBCNB10lL._SL1500_-400x400.jpg 400w, http://www.skade.us/wp-content/uploads/2022/08/71oBCNB10lL._SL1500_-300x300.jpg 300w, http://www.skade.us/wp-content/uploads/2022/08/71oBCNB10lL._SL1500_-1024x1024.jpg 1024w, http://www.skade.us/wp-content/uploads/2022/08/71oBCNB10lL._SL1500_-150x150.jpg 150w, http://www.skade.us/wp-content/uploads/2022/08/71oBCNB10lL._SL1500_-768x768.jpg 768w, http://www.skade.us/wp-content/uploads/2022/08/71oBCNB10lL._SL1500_-1x1.jpg 1w"
+                                                        sizes="(max-width: 1500px) 100vw, 1500px" draggable="false"
+                                                        width="1500" height="1500"></a></li>
+                                                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;"
+                                                    class="slide-949 ms-image" data-thumb-alt="" aria-hidden="true"><a
+                                                        href="https://www.amazon.com/gp/product/B0B85KXLKV"
+                                                        target="_blank"><img
+                                                        src="http://www.skade.us/wp-content/uploads/2022/08/61RIXgJRQzL._SL1500_.jpg"
+                                                        class="slider-943 slide-949" alt="" decoding="async"
+                                                        loading="lazy"
+                                                        rel="" title="61RIXgJRQzL._SL1500_"
+                                                        style="margin: 0 auto; width: 100%"
+                                                        srcset="http://www.skade.us/wp-content/uploads/2022/08/61RIXgJRQzL._SL1500_.jpg 1500w, http://www.skade.us/wp-content/uploads/2022/08/61RIXgJRQzL._SL1500_-200x200.jpg 200w, http://www.skade.us/wp-content/uploads/2022/08/61RIXgJRQzL._SL1500_-100x100.jpg 100w, http://www.skade.us/wp-content/uploads/2022/08/61RIXgJRQzL._SL1500_-400x400.jpg 400w, http://www.skade.us/wp-content/uploads/2022/08/61RIXgJRQzL._SL1500_-300x300.jpg 300w, http://www.skade.us/wp-content/uploads/2022/08/61RIXgJRQzL._SL1500_-1024x1024.jpg 1024w, http://www.skade.us/wp-content/uploads/2022/08/61RIXgJRQzL._SL1500_-150x150.jpg 150w, http://www.skade.us/wp-content/uploads/2022/08/61RIXgJRQzL._SL1500_-768x768.jpg 768w, http://www.skade.us/wp-content/uploads/2022/08/61RIXgJRQzL._SL1500_-1x1.jpg 1w"
+                                                        sizes="(max-width: 1500px) 100vw, 1500px" draggable="false"
+                                                        width="1500" height="1500"></a></li>
+                                                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; z-index: 2;"
+                                                    class="slide-950 ms-image flex-active-slide" data-thumb-alt=""><a
+                                                        href="https://www.amazon.com/gp/product/B0B85KXLKV"
+                                                        target="_blank"><img
+                                                        src="http://www.skade.us/wp-content/uploads/2022/08/61i78O8VHdL._SL1500_.jpg"
+                                                        class="slider-943 slide-950" alt="" decoding="async"
+                                                        loading="lazy"
+                                                        rel="" title="61i78O8VHdL._SL1500_"
+                                                        style="margin: 0 auto; width: 100%"
+                                                        srcset="http://www.skade.us/wp-content/uploads/2022/08/61i78O8VHdL._SL1500_.jpg 1500w, http://www.skade.us/wp-content/uploads/2022/08/61i78O8VHdL._SL1500_-200x200.jpg 200w, http://www.skade.us/wp-content/uploads/2022/08/61i78O8VHdL._SL1500_-100x100.jpg 100w, http://www.skade.us/wp-content/uploads/2022/08/61i78O8VHdL._SL1500_-400x400.jpg 400w, http://www.skade.us/wp-content/uploads/2022/08/61i78O8VHdL._SL1500_-300x300.jpg 300w, http://www.skade.us/wp-content/uploads/2022/08/61i78O8VHdL._SL1500_-1024x1024.jpg 1024w, http://www.skade.us/wp-content/uploads/2022/08/61i78O8VHdL._SL1500_-150x150.jpg 150w, http://www.skade.us/wp-content/uploads/2022/08/61i78O8VHdL._SL1500_-768x768.jpg 768w, http://www.skade.us/wp-content/uploads/2022/08/61i78O8VHdL._SL1500_-1x1.jpg 1w"
+                                                        sizes="(max-width: 1500px) 100vw, 1500px" draggable="false"
+                                                        width="1500" height="1500"></a></li>
+                                                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;"
+                                                    class="slide-951 ms-image" aria-hidden="true" data-thumb-alt=""><a
+                                                        href="https://www.amazon.com/gp/product/B0B85KXLKV"
+                                                        target="_blank"><img
+                                                        src="http://www.skade.us/wp-content/uploads/2022/08/61Ey9wyc4nL._SL1500_.jpg"
+                                                        class="slider-943 slide-951" alt="" decoding="async"
+                                                        loading="lazy"
+                                                        rel="" title="61Ey9wyc4nL._SL1500_"
+                                                        style="margin: 0 auto; width: 100%"
+                                                        srcset="http://www.skade.us/wp-content/uploads/2022/08/61Ey9wyc4nL._SL1500_.jpg 1500w, http://www.skade.us/wp-content/uploads/2022/08/61Ey9wyc4nL._SL1500_-200x200.jpg 200w, http://www.skade.us/wp-content/uploads/2022/08/61Ey9wyc4nL._SL1500_-100x100.jpg 100w, http://www.skade.us/wp-content/uploads/2022/08/61Ey9wyc4nL._SL1500_-400x400.jpg 400w, http://www.skade.us/wp-content/uploads/2022/08/61Ey9wyc4nL._SL1500_-300x300.jpg 300w, http://www.skade.us/wp-content/uploads/2022/08/61Ey9wyc4nL._SL1500_-1024x1024.jpg 1024w, http://www.skade.us/wp-content/uploads/2022/08/61Ey9wyc4nL._SL1500_-150x150.jpg 150w, http://www.skade.us/wp-content/uploads/2022/08/61Ey9wyc4nL._SL1500_-768x768.jpg 768w, http://www.skade.us/wp-content/uploads/2022/08/61Ey9wyc4nL._SL1500_-1x1.jpg 1w"
+                                                        sizes="(max-width: 1500px) 100vw, 1500px" draggable="false"
+                                                        width="1500" height="1500"></a></li>
+                                            </ul>
+                                            <ol class="flex-control-nav flex-control-paging">
+                                                <li><a href="#" class="">1</a></li>
+                                                <li><a href="#" class="">2</a></li>
+                                                <li><a href="#" class="">3</a></li>
+                                                <li><a href="#" class="">4</a></li>
+                                                <li><a href="#" class="">5</a></li>
+                                                <li><a href="#" class="">6</a></li>
+                                                <li><a href="#" class="flex-active">7</a></li>
+                                                <li><a href="#">8</a></li>
+                                            </ol>
+                                            <ul class="flex-direction-nav">
+                                                <li class="flex-nav-prev"><a class="flex-prev" href="#">Previous</a>
+                                                </li>
+                                                <li class="flex-nav-next"><a class="flex-next" href="#">Next</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="wp-block-image is-style-default">
+                                <figure class="aligncenter size-full is-resized"><img decoding="async"
+                                                                                      src="http://www.skade.us/wp-content/uploads/2022/08/a242d425-e2c0-4d34-bf61-666df3ce9218.__CR00970300_PT0_SX970_V1___.jpg"
+                                                                                      alt="" class="wp-image-941"
+                                                                                      srcset="http://www.skade.us/wp-content/uploads/2022/08/a242d425-e2c0-4d34-bf61-666df3ce9218.__CR00970300_PT0_SX970_V1___.jpg 970w, http://www.skade.us/wp-content/uploads/2022/08/a242d425-e2c0-4d34-bf61-666df3ce9218.__CR00970300_PT0_SX970_V1___-400x124.jpg 400w, http://www.skade.us/wp-content/uploads/2022/08/a242d425-e2c0-4d34-bf61-666df3ce9218.__CR00970300_PT0_SX970_V1___-300x93.jpg 300w, http://www.skade.us/wp-content/uploads/2022/08/a242d425-e2c0-4d34-bf61-666df3ce9218.__CR00970300_PT0_SX970_V1___-768x238.jpg 768w, http://www.skade.us/wp-content/uploads/2022/08/a242d425-e2c0-4d34-bf61-666df3ce9218.__CR00970300_PT0_SX970_V1___-1x1.jpg 1w"
+                                                                                      sizes="(max-width: 1450px) 100vw, 1450px"
+                                                                                      width="1450" height="448">
+                                </figure>
+                            </div>
+
+
+                            <h2 class="has-text-align-center has-vivid-cyan-blue-color has-text-color has-large-font-size">
+                                Feature Collections</h2>
+
+
+                            <div class="alignnormal">
+                                <div id="metaslider-id-880" style="max-width: 700px; margin: 0 auto;"
+                                     class="ml-slider-3-27-2 metaslider metaslider-flex metaslider-880 ml-slider ms-theme-cubic has-dots-nav ms-has-caption ms-loaded">
+                                    <div id="metaslider_container_880">
+                                        <div id="metaslider_880" class="flexslider">
+                                            <ul aria-live="polite" class="slides">
+                                                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;"
+                                                    class="slide-890 ms-image" data-thumb-alt="" aria-hidden="true"><a
+                                                        href="https://www.amazon.com/Bluetooth-Rechargeable-Cancelling-Amplifier-Compatible/dp/B09X2PF2DW/?_encoding=UTF8&amp;pd_rd_w=fg2mw&amp;pf_rd_p=bbb6bbd8-d236-47cb-b42f-734cb0cacc1f&amp;pf_rd_r=3A7JD70929TSZVJEJJTE&amp;pd_rd_r=01292547-d72e-44b6-bdfc-2d5302686e21&amp;pd_rd_wg=u5t06&amp;ref_=pd_gw_ci_mcx_mi"
+                                                        target="_blank"><img
+                                                        src="http://www.skade.us/wp-content/uploads/2022/05/711tDbv87iL._SL1500_.jpg"
+                                                        class="slider-880 slide-890" alt="" decoding="async"
+                                                        loading="lazy"
+                                                        rel="" title="711tDbv87iL._SL1500_"
+                                                        style="margin: 0 auto; width: 100%"
+                                                        srcset="http://www.skade.us/wp-content/uploads/2022/05/711tDbv87iL._SL1500_.jpg 1500w, http://www.skade.us/wp-content/uploads/2022/05/711tDbv87iL._SL1500_-200x200.jpg 200w, http://www.skade.us/wp-content/uploads/2022/05/711tDbv87iL._SL1500_-100x100.jpg 100w, http://www.skade.us/wp-content/uploads/2022/05/711tDbv87iL._SL1500_-400x400.jpg 400w, http://www.skade.us/wp-content/uploads/2022/05/711tDbv87iL._SL1500_-300x300.jpg 300w, http://www.skade.us/wp-content/uploads/2022/05/711tDbv87iL._SL1500_-1024x1024.jpg 1024w, http://www.skade.us/wp-content/uploads/2022/05/711tDbv87iL._SL1500_-150x150.jpg 150w, http://www.skade.us/wp-content/uploads/2022/05/711tDbv87iL._SL1500_-768x768.jpg 768w, http://www.skade.us/wp-content/uploads/2022/05/711tDbv87iL._SL1500_-1x1.jpg 1w"
+                                                        sizes="(max-width: 1500px) 100vw, 1500px" draggable="false"
+                                                        width="1500" height="1500"></a>
+                                                    <div class="caption-wrap">
+                                                        <div class="caption">Click to Buy</div>
+                                                    </div>
+                                                </li>
+                                                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;"
+                                                    class="slide-891 ms-image" data-thumb-alt="" aria-hidden="true"><a
+                                                        href="https://www.amazon.com/Bluetooth-Rechargeable-Cancelling-Amplifier-Compatible/dp/B09X2PF2DW/?_encoding=UTF8&amp;pd_rd_w=fg2mw&amp;pf_rd_p=bbb6bbd8-d236-47cb-b42f-734cb0cacc1f&amp;pf_rd_r=3A7JD70929TSZVJEJJTE&amp;pd_rd_r=01292547-d72e-44b6-bdfc-2d5302686e21&amp;pd_rd_wg=u5t06&amp;ref_=pd_gw_ci_mcx_mi"
+                                                        target="_blank"><img
+                                                        src="http://www.skade.us/wp-content/uploads/2022/05/81X-y4pKt7L._SL1500_.jpg"
+                                                        class="slider-880 slide-891" alt="" decoding="async"
+                                                        loading="lazy"
+                                                        rel="" title="81X-y4pKt7L._SL1500_"
+                                                        style="margin: 0 auto; width: 100%"
+                                                        srcset="http://www.skade.us/wp-content/uploads/2022/05/81X-y4pKt7L._SL1500_.jpg 1500w, http://www.skade.us/wp-content/uploads/2022/05/81X-y4pKt7L._SL1500_-200x200.jpg 200w, http://www.skade.us/wp-content/uploads/2022/05/81X-y4pKt7L._SL1500_-100x100.jpg 100w, http://www.skade.us/wp-content/uploads/2022/05/81X-y4pKt7L._SL1500_-400x400.jpg 400w, http://www.skade.us/wp-content/uploads/2022/05/81X-y4pKt7L._SL1500_-300x300.jpg 300w, http://www.skade.us/wp-content/uploads/2022/05/81X-y4pKt7L._SL1500_-1024x1024.jpg 1024w, http://www.skade.us/wp-content/uploads/2022/05/81X-y4pKt7L._SL1500_-150x150.jpg 150w, http://www.skade.us/wp-content/uploads/2022/05/81X-y4pKt7L._SL1500_-768x768.jpg 768w, http://www.skade.us/wp-content/uploads/2022/05/81X-y4pKt7L._SL1500_-1x1.jpg 1w"
+                                                        sizes="(max-width: 1500px) 100vw, 1500px" draggable="false"
+                                                        width="1500" height="1500"></a>
+                                                    <div class="caption-wrap">
+                                                        <div class="caption">Click to Buy</div>
+                                                    </div>
+                                                </li>
+                                                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;"
+                                                    class="slide-892 ms-image" data-thumb-alt="" aria-hidden="true"><a
+                                                        href="https://www.amazon.com/Bluetooth-Rechargeable-Cancelling-Amplifier-Compatible/dp/B09X2PF2DW/?_encoding=UTF8&amp;pd_rd_w=fg2mw&amp;pf_rd_p=bbb6bbd8-d236-47cb-b42f-734cb0cacc1f&amp;pf_rd_r=3A7JD70929TSZVJEJJTE&amp;pd_rd_r=01292547-d72e-44b6-bdfc-2d5302686e21&amp;pd_rd_wg=u5t06&amp;ref_=pd_gw_ci_mcx_mi"
+                                                        target="_blank"><img
+                                                        src="http://www.skade.us/wp-content/uploads/2022/05/71sfLJfvhBL._SL1500_.jpg"
+                                                        class="slider-880 slide-892" alt="" decoding="async"
+                                                        loading="lazy"
+                                                        rel="" title="71sfLJfvhBL._SL1500_"
+                                                        style="margin: 0 auto; width: 100%"
+                                                        srcset="http://www.skade.us/wp-content/uploads/2022/05/71sfLJfvhBL._SL1500_.jpg 1500w, http://www.skade.us/wp-content/uploads/2022/05/71sfLJfvhBL._SL1500_-200x200.jpg 200w, http://www.skade.us/wp-content/uploads/2022/05/71sfLJfvhBL._SL1500_-100x100.jpg 100w, http://www.skade.us/wp-content/uploads/2022/05/71sfLJfvhBL._SL1500_-400x400.jpg 400w, http://www.skade.us/wp-content/uploads/2022/05/71sfLJfvhBL._SL1500_-300x300.jpg 300w, http://www.skade.us/wp-content/uploads/2022/05/71sfLJfvhBL._SL1500_-1024x1024.jpg 1024w, http://www.skade.us/wp-content/uploads/2022/05/71sfLJfvhBL._SL1500_-150x150.jpg 150w, http://www.skade.us/wp-content/uploads/2022/05/71sfLJfvhBL._SL1500_-768x768.jpg 768w, http://www.skade.us/wp-content/uploads/2022/05/71sfLJfvhBL._SL1500_-1x1.jpg 1w"
+                                                        sizes="(max-width: 1500px) 100vw, 1500px" draggable="false"
+                                                        width="1500" height="1500"></a>
+                                                    <div class="caption-wrap">
+                                                        <div class="caption">Click to Buy</div>
+                                                    </div>
+                                                </li>
+                                                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;"
+                                                    class="slide-893 ms-image" data-thumb-alt="" aria-hidden="true"><a
+                                                        href="https://www.amazon.com/Bluetooth-Rechargeable-Cancelling-Amplifier-Compatible/dp/B09X2PF2DW/?_encoding=UTF8&amp;pd_rd_w=fg2mw&amp;pf_rd_p=bbb6bbd8-d236-47cb-b42f-734cb0cacc1f&amp;pf_rd_r=3A7JD70929TSZVJEJJTE&amp;pd_rd_r=01292547-d72e-44b6-bdfc-2d5302686e21&amp;pd_rd_wg=u5t06&amp;ref_=pd_gw_ci_mcx_mi"
+                                                        target="_blank"><img
+                                                        src="http://www.skade.us/wp-content/uploads/2022/05/71dxMkLXtPL._SL1500_.jpg"
+                                                        class="slider-880 slide-893" alt="" decoding="async"
+                                                        loading="lazy"
+                                                        rel="" title="71dxMkLXtPL._SL1500_"
+                                                        style="margin: 0 auto; width: 100%"
+                                                        srcset="http://www.skade.us/wp-content/uploads/2022/05/71dxMkLXtPL._SL1500_.jpg 1500w, http://www.skade.us/wp-content/uploads/2022/05/71dxMkLXtPL._SL1500_-200x200.jpg 200w, http://www.skade.us/wp-content/uploads/2022/05/71dxMkLXtPL._SL1500_-100x100.jpg 100w, http://www.skade.us/wp-content/uploads/2022/05/71dxMkLXtPL._SL1500_-400x400.jpg 400w, http://www.skade.us/wp-content/uploads/2022/05/71dxMkLXtPL._SL1500_-300x300.jpg 300w, http://www.skade.us/wp-content/uploads/2022/05/71dxMkLXtPL._SL1500_-1024x1024.jpg 1024w, http://www.skade.us/wp-content/uploads/2022/05/71dxMkLXtPL._SL1500_-150x150.jpg 150w, http://www.skade.us/wp-content/uploads/2022/05/71dxMkLXtPL._SL1500_-768x768.jpg 768w, http://www.skade.us/wp-content/uploads/2022/05/71dxMkLXtPL._SL1500_-1x1.jpg 1w"
+                                                        sizes="(max-width: 1500px) 100vw, 1500px" draggable="false"
+                                                        width="1500" height="1500"></a>
+                                                    <div class="caption-wrap">
+                                                        <div class="caption">Click to Buy</div>
+                                                    </div>
+                                                </li>
+                                                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;"
+                                                    class="slide-894 ms-image" data-thumb-alt="" aria-hidden="true"><a
+                                                        href="https://www.amazon.com/Bluetooth-Rechargeable-Cancelling-Amplifier-Compatible/dp/B09X2PF2DW/?_encoding=UTF8&amp;pd_rd_w=fg2mw&amp;pf_rd_p=bbb6bbd8-d236-47cb-b42f-734cb0cacc1f&amp;pf_rd_r=3A7JD70929TSZVJEJJTE&amp;pd_rd_r=01292547-d72e-44b6-bdfc-2d5302686e21&amp;pd_rd_wg=u5t06&amp;ref_=pd_gw_ci_mcx_mi"
+                                                        target="_blank"><img
+                                                        src="http://www.skade.us/wp-content/uploads/2022/05/71CTo8SxfgL._SL1500_.jpg"
+                                                        class="slider-880 slide-894" alt="" decoding="async"
+                                                        loading="lazy"
+                                                        rel="" title="71CTo8SxfgL._SL1500_"
+                                                        style="margin: 0 auto; width: 100%"
+                                                        srcset="http://www.skade.us/wp-content/uploads/2022/05/71CTo8SxfgL._SL1500_.jpg 1500w, http://www.skade.us/wp-content/uploads/2022/05/71CTo8SxfgL._SL1500_-200x200.jpg 200w, http://www.skade.us/wp-content/uploads/2022/05/71CTo8SxfgL._SL1500_-100x100.jpg 100w, http://www.skade.us/wp-content/uploads/2022/05/71CTo8SxfgL._SL1500_-400x400.jpg 400w, http://www.skade.us/wp-content/uploads/2022/05/71CTo8SxfgL._SL1500_-300x300.jpg 300w, http://www.skade.us/wp-content/uploads/2022/05/71CTo8SxfgL._SL1500_-1024x1024.jpg 1024w, http://www.skade.us/wp-content/uploads/2022/05/71CTo8SxfgL._SL1500_-150x150.jpg 150w, http://www.skade.us/wp-content/uploads/2022/05/71CTo8SxfgL._SL1500_-768x768.jpg 768w, http://www.skade.us/wp-content/uploads/2022/05/71CTo8SxfgL._SL1500_-1x1.jpg 1w"
+                                                        sizes="(max-width: 1500px) 100vw, 1500px" draggable="false"
+                                                        width="1500" height="1500"></a>
+                                                    <div class="caption-wrap">
+                                                        <div class="caption">Click to Buy</div>
+                                                    </div>
+                                                </li>
+                                                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; z-index: 2;"
+                                                    class="slide-895 ms-image flex-active-slide" data-thumb-alt=""><a
+                                                        href="https://www.amazon.com/Bluetooth-Rechargeable-Cancelling-Amplifier-Compatible/dp/B09X2PF2DW/?_encoding=UTF8&amp;pd_rd_w=fg2mw&amp;pf_rd_p=bbb6bbd8-d236-47cb-b42f-734cb0cacc1f&amp;pf_rd_r=3A7JD70929TSZVJEJJTE&amp;pd_rd_r=01292547-d72e-44b6-bdfc-2d5302686e21&amp;pd_rd_wg=u5t06&amp;ref_=pd_gw_ci_mcx_mi"
+                                                        target="_blank"><img
+                                                        src="http://www.skade.us/wp-content/uploads/2022/05/61H-qX7m4CL._SL1500_.jpg"
+                                                        class="slider-880 slide-895" alt="" decoding="async"
+                                                        loading="lazy"
+                                                        rel="" title="61H-qX7m4CL._SL1500_"
+                                                        style="margin: 0 auto; width: 100%"
+                                                        srcset="http://www.skade.us/wp-content/uploads/2022/05/61H-qX7m4CL._SL1500_.jpg 1500w, http://www.skade.us/wp-content/uploads/2022/05/61H-qX7m4CL._SL1500_-200x200.jpg 200w, http://www.skade.us/wp-content/uploads/2022/05/61H-qX7m4CL._SL1500_-100x100.jpg 100w, http://www.skade.us/wp-content/uploads/2022/05/61H-qX7m4CL._SL1500_-400x400.jpg 400w, http://www.skade.us/wp-content/uploads/2022/05/61H-qX7m4CL._SL1500_-300x300.jpg 300w, http://www.skade.us/wp-content/uploads/2022/05/61H-qX7m4CL._SL1500_-1024x1024.jpg 1024w, http://www.skade.us/wp-content/uploads/2022/05/61H-qX7m4CL._SL1500_-150x150.jpg 150w, http://www.skade.us/wp-content/uploads/2022/05/61H-qX7m4CL._SL1500_-768x768.jpg 768w, http://www.skade.us/wp-content/uploads/2022/05/61H-qX7m4CL._SL1500_-1x1.jpg 1w"
+                                                        sizes="(max-width: 1500px) 100vw, 1500px" draggable="false"
+                                                        width="1500" height="1500"></a>
+                                                    <div class="caption-wrap">
+                                                        <div class="caption">Click to Buy</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ol class="flex-control-nav flex-control-paging">
+                                                <li><a href="#" class="">1</a></li>
+                                                <li><a href="#" class="">2</a></li>
+                                                <li><a href="#" class="">3</a></li>
+                                                <li><a href="#" class="">4</a></li>
+                                                <li><a href="#" class="">5</a></li>
+                                                <li><a href="#" class="flex-active">6</a></li>
+                                            </ol>
+                                            <ul class="flex-direction-nav">
+                                                <li class="flex-nav-prev"><a class="flex-prev" href="#">Previous</a>
+                                                </li>
+                                                <li class="flex-nav-next"><a class="flex-next" href="#">Next</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <br>
+                            <br>
+
+
+                            <h1 class="has-text-align-center has-large-font-size"
+                                style="font-style:normal;font-weight:800">
+                                Why Choose Us?</h1>
+
+
+                            <div class="is-layout-flex wp-container-4 wp-block-columns">
+                                <div class="is-layout-flow wp-block-column">
+                                    <figure class="wp-block-image size-large"><img decoding="async" loading="lazy"
+                                                                                   src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_257634510-1024x683.jpeg"
+                                                                                   alt="" class="wp-image-725"
+                                                                                   srcset="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_257634510-1024x683.jpeg 1024w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_257634510-scaled-400x267.jpeg 400w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_257634510-300x200.jpeg 300w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_257634510-768x512.jpeg 768w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_257634510-1536x1024.jpeg 1536w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_257634510-2048x1365.jpeg 2048w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_257634510-1x1.jpeg 1w"
+                                                                                   sizes="(max-width: 1024px) 100vw, 1024px"
+                                                                                   width="1024" height="683"></figure>
+
+
+                                    <p class="has-medium-font-size">All Skade products are designed by our experienced
+                                        product expert and patented in the global market.</p>
+                                </div>
+
+
+                                <div class="is-layout-flow wp-block-column">
+                                    <figure class="wp-block-image size-large"><img decoding="async" loading="lazy"
+                                                                                   src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_259143974-1024x683.jpeg"
+                                                                                   alt="" class="wp-image-726"
+                                                                                   srcset="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_259143974-1024x683.jpeg 1024w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_259143974-scaled-400x267.jpeg 400w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_259143974-300x200.jpeg 300w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_259143974-768x512.jpeg 768w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_259143974-1536x1024.jpeg 1536w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_259143974-2048x1365.jpeg 2048w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_259143974-1x1.jpeg 1w"
+                                                                                   sizes="(max-width: 1024px) 100vw, 1024px"
+                                                                                   width="1024" height="683"></figure>
+
+
+                                    <p class="has-medium-font-size">All Skade products are tested before shipping to
+                                        customers. We try our best to deliver the perfect item to every customer.</p>
+                                </div>
+
+
+                                <div class="is-layout-flow wp-block-column">
+                                    <figure class="wp-block-image size-large"><img decoding="async" loading="lazy"
+                                                                                   src="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_273006063-1024x683.jpeg"
+                                                                                   alt="" class="wp-image-728"
+                                                                                   srcset="http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_273006063-1024x683.jpeg 1024w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_273006063-scaled-400x267.jpeg 400w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_273006063-300x200.jpeg 300w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_273006063-768x512.jpeg 768w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_273006063-1536x1024.jpeg 1536w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_273006063-2048x1365.jpeg 2048w, http://www.skade.us/wp-content/uploads/2022/03/AdobeStock_273006063-1x1.jpeg 1w"
+                                                                                   sizes="(max-width: 1024px) 100vw, 1024px"
+                                                                                   width="1024" height="683"></figure>
+
+
+                                    <p class="has-medium-font-size"><a href="http://www.skade.us/contact-us/">Contact
+                                        us</a>
+                                        now&nbsp;if you have any questions. Or easily open the online chat on this page.
+                                        We
+                                        are 24 hours online.</p>
+                                </div>
+                            </div>
+
+
+                            <p></p>
+                        </div><!-- .entry-content -->
+                        <div class="clear"></div>
+
+                    </article><!-- #post-## -->
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div><!-- main-container -->
+
+            <div class="copyright-wrapper">
+                <div class="wrapper">
+                    <div class="copyright">
+                        <aside id="block-11" class="widget widget_block">
+                            <div class="is-layout-flow wp-block-group has-text-color" style="color:#c1a863">
+                                <div class="wp-block-group__inner-container">
+                                    <div class="is-layout-flex wp-container-13 wp-block-columns">
+                                        <div class="is-layout-flow wp-block-column">
+                                            <div class="is-layout-flex wp-container-7 wp-block-columns">
+                                                <div class="is-layout-flow wp-block-column">
+                                                    <figure class="wp-block-image size-large"><img decoding="async"
+                                                                                                   src="http://129.213.123.50/wp-content/uploads/2022/03/d344f01d127e8202547a7174f91cd8c-977x1024.png"
+                                                                                                   class="wp-image-680"
+                                                                                                   width="140"></figure>
+                                                </div>
+
+
+                                                <div class="is-layout-flow wp-block-column">
+                                                    <div class="widget widget_nav_menu"><h2 class="widgettitle">Compand
+                                                        Policy</h2>
+                                                        <div class="menu-company-policy-container">
+                                                            <ul id="menu-company-policy" class="menu">
+                                                                <li id="menu-item-663"
+                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-663">
+                                                                    <a href="http://www.skade.us/payment-policy/">Payment
+                                                                        Policy</a></li>
+                                                                <li id="menu-item-818"
+                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-818">
+                                                                    <a href="http://www.skade.us/refund_returns/">Refund
+                                                                        and
+                                                                        Returns Policy</a></li>
+                                                                <li id="menu-item-825"
+                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-825">
+                                                                    <a href="http://www.skade.us/privacy-policy-3/">Privacy
+                                                                        Policy</a></li>
+                                                                <li id="menu-item-665"
+                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-665">
+                                                                    <a href="http://www.skade.us/shipping-policy/">Shipping
+                                                                        Policy</a></li>
+                                                                <li id="menu-item-666"
+                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-666">
+                                                                    <a href="http://www.skade.us/warranty/">Warranty</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="is-layout-flow wp-block-column">
+                                            <div class="is-layout-flex wp-container-11 wp-block-columns">
+                                                <div class="is-layout-flow wp-block-column">
+                                                    <div class="widget widget_nav_menu"><h2 class="widgettitle">Get to
+                                                        Know
+                                                        Us</h2>
+                                                        <div class="menu-get-to-know-us-container">
+                                                            <ul id="menu-get-to-know-us" class="menu">
+                                                                <li id="menu-item-667"
+                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-667">
+                                                                    <a href="http://www.skade.us/about-us/">About Us</a>
+                                                                </li>
+                                                                <li id="menu-item-668"
+                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-668">
+                                                                    <a href="http://www.skade.us/blog/">Blog</a></li>
+                                                                <li id="menu-item-669"
+                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-669">
+                                                                    <a href="http://www.skade.us/terms-of-service/">Terms
+                                                                        of
+                                                                        Service</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="is-layout-flow wp-block-column">
+                                                    <div class="widget widget_nav_menu"><h2 class="widgettitle">Let Us
+                                                        Help
+                                                        You</h2>
+                                                        <div class="menu-let-us-help-you-container">
+                                                            <ul id="menu-let-us-help-you" class="menu">
+                                                                <li id="menu-item-670"
+                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-670">
+                                                                    <a href="http://www.skade.us/contact-us/">Contact
+                                                                        Us</a>
+                                                                </li>
+                                                                <li id="menu-item-671"
+                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-671">
+                                                                    <a href="http://www.skade.us/faqs/">FAQs</a></li>
+                                                                <li id="menu-item-672"
+                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-672">
+                                                                    <a href="http://www.skade.us/my-account/">My
+                                                                        account</a>
+                                                                </li>
+                                                                <li id="menu-item-673"
+                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-673">
+                                                                    <a href="http://www.skade.us/user-guide/">User
+                                                                        Guide</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <p><a href="http://www.skade.us/" rel="home">SKADE 2023 . Copyright</a></p><a
+                            href="http://www.skade.us/" rel="home">
+                    </a></div><!-- copyright -->
+                    <div class="clear"></div>
+                    <a href="http://www.skade.us/" rel="home">
+                    </a></div><!-- container --><a href="http://www.skade.us/" rel="home">
+            </a></div>
+            <a href="http://www.skade.us/" rel="home">
+            </a></div>
+        <a href="http://www.skade.us/" rel="home">
+
+            <script type="text/javascript">
+                (function () {
+                    var c = document.body.className;
+                    c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+                    document.body.className = c;
+                })();
+            </script>
+            <link rel="stylesheet" id="metaslider-flex-slider-css"
+                  href="http://www.skade.us/wp-content/plugins/ml-slider/assets/sliders/flexslider/flexslider.css?ver=3.27.2"
+                  type="text/css" media="all" property="stylesheet">
+            <link rel="stylesheet" id="metaslider-public-css"
+                  href="http://www.skade.us/wp-content/plugins/ml-slider/assets/metaslider/public.css?ver=3.27.2"
+                  type="text/css" media="all" property="stylesheet">
+            <link rel="stylesheet" id="metaslider_cubic_theme_styles-css"
+                  href="http://www.skade.us/wp-content/plugins/ml-slider/themes/cubic/v1.0.0/style.min.css?ver=1.0.0"
+                  type="text/css" media="all" property="stylesheet">
+            <style id="core-block-supports-inline-css" type="text/css">
+                .wp-block-columns.wp-container-4, .wp-block-columns.wp-container-7, .wp-block-columns.wp-container-11, .wp-block-columns.wp-container-13 {
+                    flex-wrap: nowrap;
+                }
+            </style>
+            <script type="text/javascript"
+                    src="http://www.skade.us/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9"
+                    id="regenerator-runtime-js"></script>
+            <script type="text/javascript"
+                    src="http://www.skade.us/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0"
+                    id="wp-polyfill-js"></script>
+            <script type="text/javascript" id="contact-form-7-js-extra">
+                /* <![CDATA[ */
+                var wpcf7 = {"api": {"root": "http:\/\/www.skade.us\/wp-json\/", "namespace": "contact-form-7\/v1"}};
+                /* ]]> */
+            </script>
+            <script type="text/javascript"
+                    src="http://www.skade.us/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.6"
+                    id="contact-form-7-js"></script>
+            <script type="text/javascript"
+                    src="http://www.skade.us/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.6.8.0"
+                    id="jquery-blockui-js"></script>
+            <script type="text/javascript" id="wc-add-to-cart-js-extra">
+                /* <![CDATA[ */
+                var wc_add_to_cart_params = {
+                    "ajax_url": "\/wp-admin\/admin-ajax.php",
+                    "wc_ajax_url": "\/?wc-ajax=%%endpoint%%",
+                    "i18n_view_cart": "View cart",
+                    "cart_url": "http:\/\/www.skade.us\/cart\/",
+                    "is_cart": "",
+                    "cart_redirect_after_add": "no"
+                };
+                /* ]]> */
+            </script>
+            <script type="text/javascript"
+                    src="http://www.skade.us/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=6.8.0"
+                    id="wc-add-to-cart-js"></script>
+            <script type="text/javascript"
+                    src="http://www.skade.us/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.6.8.0"
+                    id="js-cookie-js"></script>
+            <script type="text/javascript" id="woocommerce-js-extra">
+                /* <![CDATA[ */
+                var woocommerce_params = {
+                    "ajax_url": "\/wp-admin\/admin-ajax.php",
+                    "wc_ajax_url": "\/?wc-ajax=%%endpoint%%"
+                };
+                /* ]]> */
+            </script>
+            <script type="text/javascript"
+                    src="http://www.skade.us/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=6.8.0"
+                    id="woocommerce-js"></script>
+            <script type="text/javascript" id="wc-cart-fragments-js-extra">
+                /* <![CDATA[ */
+                var wc_cart_fragments_params = {
+                    "ajax_url": "\/wp-admin\/admin-ajax.php",
+                    "wc_ajax_url": "\/?wc-ajax=%%endpoint%%",
+                    "cart_hash_key": "wc_cart_hash_907e7e62407453549797e65fde1fb2d6",
+                    "fragment_name": "wc_fragments_907e7e62407453549797e65fde1fb2d6",
+                    "request_timeout": "5000"
+                };
+                /* ]]> */
+            </script>
+            <script type="text/javascript"
+                    src="http://www.skade.us/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=6.8.0"
+                    id="wc-cart-fragments-js"></script>
+            <script type="text/javascript" id="insita-lite-navigation-js-extra">
+                /* <![CDATA[ */
+                var NavigationScreenReaderText = [];
+                /* ]]> */
+            </script>
+            <script type="text/javascript"
+                    src="http://www.skade.us/wp-content/themes/insita-lite/js/navigation.js?ver=20190715"
+                    id="insita-lite-navigation-js"></script>
+            <script type="text/javascript"
+                    src="http://www.skade.us/wp-content/plugins/ml-slider/assets/sliders/flexslider/jquery.flexslider.min.js?ver=3.27.2"
+                    id="metaslider-flex-slider-js"></script>
+            <script type="text/javascript" id="metaslider-flex-slider-js-after">
+                var metaslider_943 = function ($) {
+                    $('#metaslider_943').addClass('flexslider');
+                    $('#metaslider_943').flexslider({
+                        slideshowSpeed: 3000,
+                        animation: "fade",
+                        controlNav: true,
+                        directionNav: true,
+                        pauseOnHover: true,
+                        direction: "horizontal",
+                        reverse: false,
+                        animationSpeed: 1000,
+                        prevText: "Previous",
+                        nextText: "Next",
+                        fadeFirstSlide: false,
+                        slideshow: true
+                    });
+                    $(document).trigger('metaslider/initialized', '#metaslider_943');
+                };
+                var timer_metaslider_943 = function () {
+                    var slider = !window.jQuery ? window.setTimeout(timer_metaslider_943, 100) : !jQuery.isReady ? window.setTimeout(timer_metaslider_943, 1) : metaslider_943(window.jQuery);
+                };
+                timer_metaslider_943();
+                var metaslider_880 = function ($) {
+                    $('#metaslider_880').addClass('flexslider');
+                    $('#metaslider_880').flexslider({
+                        slideshowSpeed: 3000,
+                        animation: "fade",
+                        controlNav: true,
+                        directionNav: true,
+                        pauseOnHover: true,
+                        direction: "horizontal",
+                        reverse: false,
+                        animationSpeed: 600,
+                        prevText: "Previous",
+                        nextText: "Next",
+                        fadeFirstSlide: true,
+                        slideshow: true
+                    });
+                    $(document).trigger('metaslider/initialized', '#metaslider_880');
+                };
+                var timer_metaslider_880 = function () {
+                    var slider = !window.jQuery ? window.setTimeout(timer_metaslider_880, 100) : !jQuery.isReady ? window.setTimeout(timer_metaslider_880, 1) : metaslider_880(window.jQuery);
+                };
+                timer_metaslider_880();
+            </script>
+            <script type="text/javascript"
+                    src="http://www.skade.us/wp-content/plugins/ml-slider/themes/cubic/v1.0.0/script.js?ver=1.0.0"
+                    id="metaslider_cubic_theme_script-js"></script>
+
+
+        </a></div>
+    </main>
+
+{% endblock content %}
